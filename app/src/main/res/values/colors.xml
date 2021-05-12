@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+  <!-- Theme colors -->
+  <item name="theme_primary" type="color">#FFFFFF</item>
+  <item name="theme_secondary" type="color">#878787</item>
+  <item name="theme_primary_text" type="color">#212121</item>
+  <item name="theme_secondary_text" type="color">#878787</item>
+
+  <!-- Auditory Story overlay colors -->
+  <item name="translucent_text_overlay" type="color">#A0000000</item>
+  <item name="gray_text_overlay" type="color">#A0E0E0E0</item>
+  <item name="icon_overlay_dark" type="color">#FF3F3F3F</item>
+
+  <!-- Misc. Material colors -->
+  <item name="primary_text_color_white" type="color">#FFFFFF</item>
+  <item name="primary_text_color_black" type="color">#000000</item>
+
+
+  <color name="ea_blue50">#e8f0fe</color>
+  <color name="ea_blue600">#1a73e8</color>
+  <color name="ea_blue800">#185abc</color>
+  <color name="ea_grey300">#dadce0</color>
+  <color name="ea_grey700">#5f6368</color>
+  <color name="ea_grey900">#202124</color>
+  <color name="ea_white">#FFFFFF</color>
+  <color name="ea_black">#000000</color>
+
+</resources>

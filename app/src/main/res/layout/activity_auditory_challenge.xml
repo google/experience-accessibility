@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AuditoryChallengeActivity">
+
+    <LinearLayout
+        android:id="@+id/auditoryChallengeActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/auditoryChallengeAccessibleSwitch"
+            style="@style/SettingsSwitchStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/auditory_accessible_switch" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/auditoryChallengeChipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="18dp"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHealthy"
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip_clear_vision"
+                    app:chipBackgroundColor="@drawable/chip_state_list_bg"
+                    app:chipStrokeColor="@drawable/chip_state_list_stroke"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipContrast"
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip_contrast_sensitivity"
+                    app:chipBackgroundColor="@drawable/chip_state_list_bg"
+                    app:chipStrokeColor="@drawable/chip_state_list_stroke"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMacular"
+                    style="@style/ChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip_macular_degeneration"
+                    app:chipBackgroundColor="@drawable/chip_state_list_bg"
+                    app:chipStrokeColor="@drawable/chip_state_list_stroke"
+                    app:chipStrokeWidth="1dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/auditoryChallengeScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auditoryChallengeActionBar"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop = "20dp"
+                android:paddingBottom = "20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- Intentionally set to identical content descriptions to showcase inaccessible design -->
+                <ImageView
+                    android:id="@+id/auditoryChallengeIconFavorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/button_description"
+                    android:src="@drawable/ic_favorite" />
+
+                <ImageView
+                    android:id="@+id/auditoryChallengeIconShare"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/button_description"
+                    android:src="@drawable/ic_share" />
+
+                <ImageView
+                    android:id="@+id/auditoryChallengeIconMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:contentDescription="@string/button_description"
+                    android:src="@drawable/ic_menu" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/auditoryChallengeTitle"
+                style="@style/ChallengeTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/auditoryChallengeHeader"
+                style="@style/ChallengeHeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/auditoryChallengeText"
+                style="@style/ChallengeBodyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/auditoryChallengeGradientMask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:visibility="gone"
+        android:background="@drawable/macular_gradient"
+        android:importantForAccessibility="no" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/auditoryChallengeBackToMenuButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/auditory_challenge_back_to_story_button_description"
+        app:cornerRadius="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AuditoryStoryActivity">
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/auditoryStoryMuteButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_alignParentStart="true"
+            android:checkable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:contentDescription="@string/auditory_mute_button_description"
+            app:icon="@drawable/controller_mute"
+            app:iconTint="@color/ea_white"
+            app:backgroundTint="@drawable/icon_button_state_list_bg"
+            app:rippleColor="@android:color/transparent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playPauseButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:checkable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:contentDescription="@string/pause_video"
+            app:icon="@drawable/controller_pauseplay"
+            app:iconTint="@color/ea_white"
+            app:backgroundTint="@drawable/icon_button_state_list_bg"
+            app:rippleColor="@android:color/transparent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/auditoryStoryNextButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:paddingLeft="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/auditory_go_to_challenge_description"
+            app:icon="@drawable/ic_baseline_skip_next_32"
+            app:iconTint="@color/ea_white"
+            app:rippleColor="@android:color/transparent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

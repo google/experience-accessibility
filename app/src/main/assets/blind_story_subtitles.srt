@@ -1,0 +1,137 @@
+﻿1
+00:00:01,902 --> 00:00:05,205
+user: The day I went blind
+was the scariest day of my life.
+
+2
+00:00:05,239 --> 00:00:07,374
+Nothing would ever be the same.
+
+3
+00:00:07,407 --> 00:00:09,209
+How would I do anything?
+
+4
+00:00:09,243 --> 00:00:13,547
+Reading, writing, even walking were things
+I could no longer take for granted.
+
+5
+00:00:13,580 --> 00:00:14,882
+[footsteps]
+
+6
+00:00:14,915 --> 00:00:18,719
+I remember as a kid, I used to be able to
+see clear views around my neighborhood.
+
+7
+00:00:18,752 --> 00:00:19,887
+[child shouts happily]
+
+8
+00:00:19,920 --> 00:00:22,723
+Over the years, things started to fade.
+
+9
+00:00:22,756 --> 00:00:25,726
+Letters, words, signs,
+
+10
+00:00:25,759 --> 00:00:28,562
+even big ones became blurry
+and hard to read...
+
+11
+00:00:28,595 --> 00:00:29,730
+[birds chirping]
+
+12
+00:00:29,763 --> 00:00:31,398
+Till one day it was all gone.
+
+13
+00:00:31,431 --> 00:00:32,900
+[animal howling]
+
+14
+00:00:32,933 --> 00:00:34,568
+I was so scared.
+
+15
+00:00:34,601 --> 00:00:36,570
+I was suddenly seeing nothing,
+
+16
+00:00:36,603 --> 00:00:39,740
+even with my eyes wide open.
+
+17
+00:00:39,773 --> 00:00:41,408
+But then I learned that my smartphone
+
+18
+00:00:41,441 --> 00:00:44,745
+had all these amazing accessibility
+features, like screen readers.
+
+19
+00:00:44,778 --> 00:00:47,247
+As I played with my phone
+and explored different apps,
+
+20
+00:00:47,281 --> 00:00:50,417
+I noticed that some
+were easier to use than others.
+
+21
+00:00:50,450 --> 00:00:53,086
+For example, in some apps, I could hear...
+
+22
+00:00:53,120 --> 00:00:55,923
+phone:
+Unlabeled button, unlabeled button.
+
+23
+00:00:55,956 --> 00:00:57,257
+user:
+But in others...
+
+24
+00:00:57,291 --> 00:00:58,759
+phone:
+Play video button.
+
+25
+00:00:58,792 --> 00:01:00,027
+Close button.
+
+26
+00:01:00,060 --> 00:01:01,361
+Create button.
+
+27
+00:01:01,395 --> 00:01:03,697
+user: And now I know
+I've got a better experience
+
+28
+00:01:03,730 --> 00:01:07,034
+when the app has
+accessibility labels for buttons.
+
+29
+00:01:07,067 --> 00:01:10,704
+The labels enable me
+to use the phone on my own.
+
+30
+00:01:10,737 --> 00:01:13,373
+I'm now able to do lots of things
+that I never thought would be possible
+
+31
+00:01:13,407 --> 00:01:15,242
+when I first lost my sight.

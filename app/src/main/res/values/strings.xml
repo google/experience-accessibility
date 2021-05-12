@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+
+    <string description="App name [CHAR_LIMIT=30]" name="app_name">Experience Accessibility</string>
+
+    <string description="Google logo text [CHAR_LIMIT=30]" name="google_logo">Google</string>
+
+    <!-- Titles and Buttons -->
+    <string description="The text on start button [CHAR_LIMIT=30]" name="button_auditory_activity">Auditory</string>
+    <string description="The title of auditory splash page [CHAR_LIMIT=50]" name="title_activity_splash">ExperienceAccessibility</string>
+    <string description="The title of auditory main page [CHAR_LIMIT=50]" name="title_activity_main">ExperienceAccessibility Main Menu</string>
+    <string description="The title of auditory story page [CHAR_LIMIT=50]" name="title_activity_auditory_story">ExperienceAccessibility auditory story</string>
+    <string description="the title of auditory challenge page [CHAR_LIMIT=50]" name="title_activity_auditory_challenge">ExperienceAccessibility auditory challenge</string>
+    <string description="the title of auditory challenge deaf page [CHAR_LIMIT=50]" name="title_activity_auditory_challenge_deaf">ExperienceAccessibility deaf challenge</string>
+    <string description="the title of auditory challenge learning page [CHAR_LIMIT=50]" name="title_activity_auditory_challenge_learning_disability">ExperienceAccessibility learning challenge</string>
+    <string description="the title of auditory challenge motor impairment page [CHAR_LIMIT=50]" name="title_activity_auditory_challenge_motor_impairment">ExperienceAccessibility motor impairment challenge</string>
+    <string description="the text of auditory challenge back to menu button [CHAR_LIMIT=20]" name="auditory_challenge_back_to_menu_button_description">Back to menu</string>
+    <string description="the text of auditory challenge back to story button [CHAR_LIMIT=20]" name="auditory_challenge_back_to_story_button_description">Back to stories</string>
+    <string description="the content description of challenge button [CHAR_LIMIT=30]" name="auditory_go_to_challenge_description">Go to accessibility challenge</string>
+    <string description="the content description of mute button [CHAR_LIMIT=20]" name="auditory_mute_button_description">Mute audio</string>
+    <string description="the content description of unmute button [CHAR_LIMIT=20]" name="auditory_unmute_button_description">Unmute audio</string>
+    <string description="the content description of next page button [CHAR_LIMIT=20]" name="auditory_go_to_next_page_description">Go to next page</string>
+
+    <!-- Auditory Splash Page UI -->
+    <string description="Introductory text on splash page. [CHAR_LIMIT=NONE]" name="auditory_splash_intro">This is an auditory experience</string>
+
+
+    <!-- Auditory Landing Page UI -->
+    <string description="Title for experiencing blind. [CHAR_LIMIT=NONE]" name="auditory_landing_title_blind">EXPERIENCING BLINDNESS</string>
+    <string description="Title for experiencing deaf. [CHAR_LIMIT=NONE]" name="auditory_landing_title_deaf">EXPERIENCING DEAFNESS</string>
+    <string description="Title for experiencing motor impairment. [CHAR_LIMIT=NONE]" name="auditory_landing_title_motor_impairment">EXPERIENCING MOTOR IMPAIRMENT</string>
+    <string description="Title for experiencing learning disabilities. [CHAR_LIMIT=NONE]" name="auditory_landing_title_learning_disabilities">EXPERIENCING LEARNING DISABILITIES</string>
+
+    <!-- Auditory Story Page UI -->
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_description">The day I went blind, was the scariest day of my life.</string>
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_deaf_description">I really never thought about how many sounds were around me</string>
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_motor_description">I desperately wanted to participate in everyday life</string>
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_learning_description">School was always tough for me</string>
+
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_widget_date">Monday, May 6 |\u0020</string>
+    <string description="Auditory story text [CHAR_LIMIT=NONE]" name="auditory_story_widget_weather">\u002071 °F</string>
+
+
+  <!-- Text to Speech Content Description -->
+    <string description="The text on a widget within auditory story page 7 [CHAR_LIMIT=NONE]" name="auditory_widget">date and weather</string>
+    <string description="App icon description [CHAR_LIMIT=30]" name="chrome">chrome</string>
+    <string description="App icon description [CHAR_LIMIT=30]" name="gmail">gmail</string>
+    <string description="App icon description [CHAR_LIMIT=30]" name="photos">photos</string>
+    <string description="App icon description [CHAR_LIMIT=30]" name="drive">drive</string>
+    <string description="Inaccessible button description [CHAR_LIMIT=NONE]" name="button_description">button</string>
+    <string description="Accessible button description [CHAR_LIMIT=NONE]" name="icon_favorite_description">Add Article "Accessiblity" to Favorites</string>
+    <string description="Accessible button description [CHAR_LIMIT=NONE]" name="icon_share_description">Share Article "Accessiblity"</string>
+    <string description="Accessible button description [CHAR_LIMIT=NONE]" name="icon_menu_description">Article Menu Opens Dialog</string>
+
+    <!-- Auditory challenge Page UI -->
+    <string description="The text on a chip [CHAR_LIMIT=30]" name="chip_clear_vision">Clear Vision</string>
+    <string description="The text on a chip [CHAR_LIMIT=30]" name="chip_contrast_sensitivity">Contrast Sensitivity</string>
+    <string description="The text on a chip [CHAR_LIMIT=30]" name="chip_macular_degeneration">Macular degeneration</string>
+    <string description="The text on a chip [CHAR_LIMIT=30]" name="chip_motor_impairment">Motor Impairment</string>
+    <string description="The text on a switch thats allows the user to select between accessible/inaccessible modes [CHAR_LIMIT=30]" name="auditory_accessible_switch">Accessible</string>
+    <string description="Auditory challenge title [CHAR_LIMIT=NONE]" name="auditory_challenge_title"><![CDATA[<font color=\'#185abc\'>Accessibility</font> (a11y)]]></string>
+    <string description="Auditory challenge header [CHAR_LIMIT=NONE]" name="auditory_challenge_header"><![CDATA[<font color=\'#185abc\'>13 letters</font> that change the lives of millions]]></string>
+    <string description="Auditory challenge body text [CHAR_LIMIT=NONE]" name="auditory_challenge_body">
+      Imagine you\'re trying to walk up a beautiful house and realizing that there are no stairs to reach the door.\n\n
+      Imagine you\'re trying to open the door to your favorite room, but there is no door knob.\n\n
+      Imagine you\'re trying to cook a delicious meal, but the stove has no knobs or touch screen.\n\n
+      Finally, imagine you\'re trying to get away from it all on your bike, but you discover it has no wheels.\n\n
+      Sounds challenging, huh?\nNow imagine an app that hasn\'t considered accessibility.\n\n
+      The app may look beautiful and even enticing: everyone wants to try it out.\n\n
+      Yet, some users are left out since some of the UI elements are not defined, some UI elements are not labeled, and some elements are not event reachable.\n\n
+      What can be done?\n\n
+      Some things you can do to help your app attract the largest number of users, regardless of their accessibility needs:\n
+      \t\u2022 Define your UI elements properly (e.g. buttons, edit boxes, etc.)\n
+      \t\u2022 Label your UI elements (e.g. “add to favorites”)\n
+      \t\u2022 Ensure there is a good color contrast ratio between text &#38; background\n
+      \t\u2022 Use Material Design components whenever possible (they have been designed with accessibility in mind)\n\n
+      Now you\'re ready to walk up the stairs, open the door to the room you wished to enter, cook a delicious meal, and ride a bike with the joy of knowing that your app, and your surroundings, are more accessible to all!\n</string>
+    <string description="Auditory challenge motor impairment insturction text [CHAR_LIMIT=NONE]" name="auditory_challenge_motor_impairment_instruction">You\'re going on grocery shopping.\nPlease tick off items you\'ve got.</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_1">Peaches</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_2">Bananas</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_3">Apples</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_4">Strawberry ice-cream</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_5">Vanilla ice-cream</string>
+    <string description="The text for checkbox [CHAR_LIMIT=30]" name="motor_checkbox_6">Chocolate ice-cream</string>
+    <string description="Auditory learning challenge difficult instruction [CHAR_LIMIT=NONE]" name="auditory_challenge_learning_disability_difficult_instruction">
+      Instructions that are unclear or cumbersome are a problem for all users — not just for those with a learning disability. More time is required to comprehend the text and there\'s a higher chance of misinterpretation. On this screen, you have several options:\n\n
+      1. To get a sense of how easier to read instructions might improve user experience, press the accessible switch at the top of the screen\n\n
+      2. To listen to the content of this screen, press Play\n\n
+    </string>
+    <string description="Auditory learning challenge easy instruction [CHAR_LIMIT=NONE]" name="auditory_challenge_learning_disability_easy_instruction">
+      Easy-to-understand instructions help everyone. On this screen, you can do the following:\n\n
+      1. Press the accessible switch at the top of the screen to view harder to read instructions\n\n
+      2. Press the Play button to hear the text being read out loud\n\n
+    </string>
+
+    <string description="Auditory learning challenge title [CHAR_LIMIT=NONE]" name="auditory_challenge_learning_disability_title"><![CDATA[<font color=\'#000000\'>Instructions</font>]]></string>
+    <string description="Learning button description [CHAR_LIMIT=NONE]" name="icon_play_description">Press to play text to speech</string>
+    <string description="Learning button description [CHAR_LIMIT=NONE]" name="icon_highlight_description">Press to highlight words as speech is played</string>
+  <string description="Play video [CHAR_LIMIT=NONE]" name="play_video">Play video</string>
+  <string description="Pause video [CHAR_LIMIT=NONE]" name="pause_video">Pause video</string>
+
+  <string description="Deaf Challenge Description [CHAR_LIMIT=NONE]" name="auditory_challenge_deaf_description">See the difference captions make in the video.</string>
+
+</resources>

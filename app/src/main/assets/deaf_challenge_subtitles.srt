@@ -1,0 +1,30 @@
+﻿1
+00:00:00,333 --> 00:00:03,545
+ON TV: Crowd cheers
+
+2
+00:00:04,921 --> 00:00:08,550
+Phone rings
+
+3
+00:00:08,550 --> 00:00:13,388
+ON TV: Whistle blows, crowd boos
+Phone ringing
+
+4
+00:00:15,098 --> 00:00:19,144
+Scott: Let me call
+you right back.
+
+5
+00:00:19,310 --> 00:00:23,398
+Scott: Got it,
+I'll call you right back.
+
+6
+00:00:23,815 --> 00:00:26,151
+ON TV: Buzzer
+
+7
+00:00:26,568 --> 00:00:31,656
+ON TV: Crowd cheers
