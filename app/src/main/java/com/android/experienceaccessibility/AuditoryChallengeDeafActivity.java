@@ -56,6 +56,7 @@ public class AuditoryChallengeDeafActivity extends AppCompatActivity {
     StyledPlayerView playerView = findViewById(R.id.playerView);
     playerView.setPlayer(player);
     playerView.setUseController(false);
+    playerView.setKeepScreenOn(true);
   }
 
   private void setUpBackButtons() {

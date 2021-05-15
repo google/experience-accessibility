@@ -87,6 +87,7 @@ public class AuditoryStoryActivity extends AppCompatActivity {
     StyledPlayerView playerView = findViewById(R.id.playerView);
     playerView.setUseController(false);
     playerView.setPlayer(player);
+    playerView.setKeepScreenOn(true);
   }
 
   private void setUpExoPlayerStateChangedListener() {
