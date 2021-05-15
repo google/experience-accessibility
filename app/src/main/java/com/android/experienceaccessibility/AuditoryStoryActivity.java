@@ -16,12 +16,15 @@ package com.android.experienceaccessibility;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.android.experienceaccessibility.auditory.AuditoryStoryMapModel;
 import com.google.android.exoplayer2.Player.EventListener;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.ui.StyledPlayerView;
 import com.google.android.material.button.MaterialButton;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -145,6 +148,7 @@ public class AuditoryStoryActivity extends AppCompatActivity {
   @Override
   public void onResume() {
     super.onResume();
+    player.seekToDefaultPosition();
     player.play();
   }
 
