@@ -72,13 +72,34 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-            <ImageView
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/auditoryChallengeLearningDisabilityPlay"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_margin="20dp"
-                android:contentDescription="@string/button_description"
-                android:src="@drawable/ic_playbutton" />
+                app:iconPadding="0dp"
+                android:padding="0dp"
+                app:iconGravity="textStart"
+                app:iconSize="40dp"
+                app:icon="@drawable/ic_playbutton"
+                app:iconTint="@color/ea_black"
+                app:backgroundTint="@drawable/icon_button_state_list_bg" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/auditoryChallengeLearningDisabilityHighlight"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:checkable="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                app:iconPadding="0dp"
+                android:padding="0dp"
+                app:iconGravity="textStart"
+                app:iconSize="40dp"
+                app:icon="@drawable/controller_highlight"
+                app:iconTint="@color/ea_black"
+                app:backgroundTint="@drawable/icon_button_state_list_bg" />
         </LinearLayout>
 
             <TextView

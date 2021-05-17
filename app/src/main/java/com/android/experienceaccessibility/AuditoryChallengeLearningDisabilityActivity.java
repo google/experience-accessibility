@@ -28,7 +28,6 @@ import android.text.Spanned;
 import android.text.style.BackgroundColorSpan;
 import android.view.WindowManager;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TextView.BufferType;
 import com.google.android.material.button.MaterialButton;
@@ -41,6 +40,8 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
 
   private TextToSpeech textToSpeech;
   private boolean enableHighlight = false;
+  private String currentUtteranceId;
+  private int utteranceCounter = 0;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -61,9 +62,11 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
             getString(R.string.auditory_challenge_learning_disability_difficult_instruction)),
         BufferType.SPANNABLE);
 
-    ImageView play = findViewById(R.id.auditoryChallengeLearningDisabilityPlay);
+    MaterialButton play = findViewById(R.id.auditoryChallengeLearningDisabilityPlay);
+    MaterialButton highlight = findViewById(R.id.auditoryChallengeLearningDisabilityHighlight);
 
     play.setContentDescription(getString(R.string.icon_play_description));
+    highlight.setContentDescription(getString(R.string.icon_highlight_description));
 
     setUpBackButtons();
     setUpAccessibleSwitch();
@@ -75,6 +78,13 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
     textToSpeech.setOnUtteranceProgressListener(listener);
 
     play.setOnClickListener(v -> speakText(textBody.getText()));
+    highlight.addOnCheckedChangeListener((v, checked) -> enableHighlight = checked);
+  }
+
+  private String nextUtteranceId() {
+    currentUtteranceId = "LearningDisabilityId-" + utteranceCounter;
+    utteranceCounter++;
+    return currentUtteranceId;
   }
 
   private UtteranceProgressListener createUtteranceListener(TextView textBody) {
@@ -84,7 +94,12 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
       public void onStart(String utteranceId) {}
 
       @Override
-      public void onDone(String utteranceId) {}
+      public void onDone(String utteranceId) {
+        runOnUiThread(() -> {
+          Spannable highlightedText = getSpannableTextBody();
+          highlightedText.removeSpan(HIGHLIGHT_COLOUR);
+        });
+      }
 
       @Override
       public void onError(String utteranceId) {
@@ -93,21 +108,32 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
 
       @Override
       public void onRangeStart(String utteranceId, int start, int end, int frame) {
-        Spannable highlightedText = ((Spannable) textBody.getText());
-        if (enableHighlight) {
-          highlightedText.setSpan(
-              HIGHLIGHT_COLOUR, start, end + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
-        } else {
-          highlightedText.removeSpan(HIGHLIGHT_COLOUR);
+        if (!currentUtteranceId.equals(utteranceId)) {
+          return;
         }
-        textBody.invalidate();
+        runOnUiThread(() -> {
+          Spannable highlightedText = getSpannableTextBody();
+          if (enableHighlight) {
+            highlightedText.setSpan(
+                HIGHLIGHT_COLOUR, start, end + 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+          } else {
+            highlightedText.removeSpan(HIGHLIGHT_COLOUR);
+          }
+          textBody.invalidate();
+        });
+      }
+
+      private Spannable getSpannableTextBody() {
+        return (Spannable) textBody.getText();
       }
     };
   }
 
   private void speakText(CharSequence text) {
+    // onRangeStart breaks on full stop, see https://issuetracker.google.com/issues/174605128
+    String noFullStopsText = text.toString().replace('.', ';');
     int speechStatus =
-        textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, "LearningDisabilityId");
+        textToSpeech.speak(noFullStopsText, TextToSpeech.QUEUE_FLUSH, null, nextUtteranceId());
     if (speechStatus == TextToSpeech.ERROR) {
       Log.v(TAG,"TTS error in converting Text to Speech!");
     }
@@ -126,7 +152,7 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
     accessibleSwitch.setOnCheckedChangeListener(
         (CompoundButton v, boolean isChecked) -> {
           textToSpeech.stop();
-          enableHighlight = false;
+
           if (isChecked) {
             textBody.setText(
                 getString(R.string.auditory_challenge_learning_disability_easy_instruction));
@@ -150,6 +176,14 @@ public class AuditoryChallengeLearningDisabilityActivity extends AppCompatActivi
     if (textToSpeech != null) {
       textToSpeech.stop();
       textToSpeech.shutdown();
+    }
+  }
+
+  @Override
+  protected void onPause() {
+    super.onPause();
+    if (textToSpeech != null) {
+      textToSpeech.stop();
     }
   }
 }

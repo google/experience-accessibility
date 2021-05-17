@@ -102,12 +102,12 @@
       Instructions that are unclear or cumbersome are a problem for all users — not just for those with a learning disability. More time is required to comprehend the text and there\'s a higher chance of misinterpretation. On this screen, you have several options:\n\n
       1. To get a sense of how easier to read instructions might improve user experience, press the accessible switch at the top of the screen\n\n
       2. To listen to the content of this screen, press Play\n\n
-    </string>
+      3. To track the text you\'re hearing, press Highlight\n</string>
     <string description="Auditory learning challenge easy instruction [CHAR_LIMIT=NONE]" name="auditory_challenge_learning_disability_easy_instruction">
       Easy-to-understand instructions help everyone. On this screen, you can do the following:\n\n
       1. Press the accessible switch at the top of the screen to view harder to read instructions\n\n
       2. Press the Play button to hear the text being read out loud\n\n
-    </string>
+      3. Press the Highlight button to follow the text on the page as it\'s being read out loud\n</string>
 
     <string description="Auditory learning challenge title [CHAR_LIMIT=NONE]" name="auditory_challenge_learning_disability_title"><![CDATA[<font color=\'#000000\'>Instructions</font>]]></string>
     <string description="Learning button description [CHAR_LIMIT=NONE]" name="icon_play_description">Press to play text to speech</string>
